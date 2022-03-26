@@ -44,6 +44,8 @@ const middle = function(array) {
   return resultMiddle;
 };
 
+// tests used:
+/*
 middle([1,2]); // returns []
 middle([1,2,3]); // returns [2]
 middle([1,2,3,4]); // returns [2, 4]
@@ -57,3 +59,4 @@ middle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]); // returns [10,11]
 assertArraysEqual([1,2],middle([1,2]),true);
 assertArraysEqual([3],middle([1,2,3,4,5]),true);
 assertArraysEqual([1,2,3,4,5,6],middle([1,2,3,4,5,6]),false);
+*/
