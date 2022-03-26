@@ -26,17 +26,17 @@ const assertArraysEqual = function(array1, array2, expected) {
   }
 };
 
+// eslint-disable-next-line no-unused-vars
 const flatten = function(flattenArray) {
   let resultArray = [];
   for (let i = 0; i < flattenArray.length; i++) {
-    if (typeof(flattenArray[i]) === "object") {
+    if (Array.isArray(flattenArray[i])) {
       for (let x = 0; x < flattenArray[i].length; x++) {
         resultArray.push(flattenArray[i][x]);
       }
     } else {
       resultArray.push(flattenArray[i]);
     }
-
   }
   console.log(resultArray);
 };
