@@ -50,7 +50,3 @@ const without = function(source,itemsToRemove) {
   }
   console.log(resultArray);
 };
-
-without([1,2,3],[2,4,5,6]);
-without(["Hello","lighthouse","labs"],["lighthouse"]);
-without(array1,[3]);
