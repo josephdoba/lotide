@@ -25,3 +25,18 @@ const assertArraysEqual = function(array1, array2, expected) {
     console.log(`🚨 Assertion Failed: ${array1,array2} !== ${expected}`);
   }
 };
+
+const flatten = function(flattenArray) {
+  let resultArray = [];
+  for (let i = 0; i < flattenArray.length; i++) {
+    if (typeof(flattenArray[i]) === "object") {
+      for (let x = 0; x < flattenArray[i].length; x++) {
+        resultArray.push(flattenArray[i][x]);
+      }
+    } else {
+      resultArray.push(flattenArray[i]);
+    }
+
+  }
+  console.log(resultArray);
+};

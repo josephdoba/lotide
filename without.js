@@ -19,6 +19,7 @@ const eqArrays = function(arr1, arr2) {
   return result;
 };
 
+// eslint-disable-next-line no-unused-vars
 const assertArraysEqual = function(array1, array2, expected) {
   if (eqArrays(array1,array2) === expected) {
     console.log(`✅ Assertion Passed: ${array1,array2} === ${expected}`);
@@ -46,7 +47,12 @@ const without = function(source,itemsToRemove) {
       if (!isMatching) {
         resultArray.push(source[i]);
       }
+
     }
   }
   console.log(resultArray);
 };
+
+without([1,2,3],[2,4,5,6]);
+without(["Hello","lighthouse","labs"],["lighthouse"]);
+without(array1,[3]);
