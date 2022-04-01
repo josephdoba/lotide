@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 const eqArrays = function(arr1, arr2) {
   let result = false;
   if (arr1.length === arr2.length) {

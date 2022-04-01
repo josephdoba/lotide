@@ -16,7 +16,6 @@ const countLetters = function(words) {
       //   result[letter] = 1;
       // }
       result[letter] ? result[letter] += 1 : result[letter] = 1;
-
     }
   }
   console.log(result);
