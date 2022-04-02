@@ -1,7 +1,3 @@
-const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`🚨 Assertion Failed: ${actual} !== ${expected}`);
-};
-
 const eqArrays = function(arr1, arr2) {
   let result = false;
   if (arr1.length === arr2.length) {
@@ -53,21 +49,16 @@ const dc = { d: ["2", 3], c: "1" };
 const cd2 = { c: "1", d: ["2", 3, 4] };
 
 
-//array tests:
-// console.log(eqObjects(cd, dc)); // returns true
-// console.log(eqObjects(cd, cd2)); // returns false
-// eqObjects(cd, cd2); // => false
-
-// assertObjectsEqual.js declaration:
-// arrow function syntax:
-
 const assertObjectsEqual = (actual, expected) => {
   // according to nodes' website, inspect returns a string'd version of an object, easier for debugging. https://nodejs.org/api/util.html#utilinspectobject-options
   // we import the module "util" from node, and assign the function to a variable below:
   const inspect = require('util').inspect;
 
   eqObjects(actual, expected) ? console.log(`✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`) : console.log(`🚨 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
+  console.log("----------------------------------");
 };
 
 assertObjectsEqual(ab, ba);
 assertObjectsEqual(ab, abc);
+assertObjectsEqual(cd, dc);
+assertObjectsEqual(cd, cd2);
