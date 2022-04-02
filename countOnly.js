@@ -7,7 +7,6 @@ const assertEqual = function(actual, expected) {
 };
 
 // countOnly will be given an array and an object. it should return an object containing counts of everything that input object listed
-
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
