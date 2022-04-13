@@ -1,3 +1,5 @@
+const assertEqual = require("./assertEqual.js");
+
 const eqArrays = function(arr1, arr2) {
   let result = false;
   if (arr1.length === arr2.length) {
@@ -16,3 +18,5 @@ const eqArrays = function(arr1, arr2) {
   }
   return result;
 };
+
+module.exports = eqArrays;
