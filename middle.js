@@ -1,3 +1,7 @@
+const eqArrays = require("./eqArrays.js");
+const asserArraysEqual = require("./assertArraysEqual.js");
+
+/*
 const eqArrays = function(arr1, arr2) {
   let result = false;
   if (arr1.length === arr2.length) {
@@ -25,6 +29,7 @@ const assertArraysEqual = function(array1, array2, expected) {
     console.log(`🚨 Assertion Failed: ${array1,array2} !== ${expected}`);
   }
 };
+*/
 
 // eslint-disable-next-line no-unused-vars
 const middle = function(array) {
@@ -44,8 +49,9 @@ const middle = function(array) {
   return resultMiddle;
 };
 
-// tests used:
 /*
+// Middle tests:
+console.log("---------------------");
 middle([1,2]); // returns []
 middle([1,2,3]); // returns [2]
 middle([1,2,3,4]); // returns [2, 4]
@@ -54,9 +60,14 @@ middle([1,2,3,4,5,6]); // returns [3,4]
 middle([1,2,3,4,5,6,7,8,9]); // returns [5]
 middle([1,2,3,4,5,6,7,8,9,10]); // returns [5,6]
 middle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]); // returns [10,11]
+console.log("---------------------");
 
 // testing asserArraysEqual
+console.log("---------------------");
 assertArraysEqual([1,2],middle([1,2]),true);
 assertArraysEqual([3],middle([1,2,3,4,5]),true);
 assertArraysEqual([1,2,3,4,5,6],middle([1,2,3,4,5,6]),false);
+console.log("---------------------");
 */
+
+module.exports = middle;
