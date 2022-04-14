@@ -40,3 +40,5 @@ const flatten = function(flattenArray) {
   }
   console.log(resultArray);
 };
+
+module.exports = flatten;

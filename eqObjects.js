@@ -80,3 +80,5 @@ const eqObjects = function(obj1, obj2) {
 console.log(eqObjects(cd, dc)); // returns true
 console.log(eqObjects(cd, cd2)); // returns false
 // eqObjects(cd, cd2); // => false
+
+module.exports = eqObjects;

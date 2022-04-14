@@ -42,7 +42,7 @@ const map = (array, callback) => {
   }
   return results;
 };
-
+/*
 // Write out three different ways to use map
 const results1 = map(words, word => word[0]); // only returns the first character of each element into an array
 const results2 = map(words, word => word.split()); // creates nested arrays for each element.
@@ -58,5 +58,7 @@ console.log(assertArraysEqual(words,words));
 console.log(assertArraysEqual(words,results1));
 console.log(assertArraysEqual(words,results2));
 console.log(assertArraysEqual(words,results3));
+*/
 
+module.exports = map;
 

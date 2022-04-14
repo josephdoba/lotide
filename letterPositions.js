@@ -70,5 +70,9 @@ const letterPositions = function(sentence) {
 assertArraysEqual(letterPositions("hello"), [1]); // write the function first.. this looks at the key "e" .. should return true
 */
 
+/*
 letterPositions("lighthouse in the house");
 assertArraysEqual(letterPositions("hello").l, [2,3], true);
+*/
+
+module.exports = letterPositions;

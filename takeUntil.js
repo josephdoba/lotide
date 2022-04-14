@@ -49,7 +49,10 @@ console.log(results1);
 console.log("-------");
 console.log(results2);
 
-
+/*
 assertArraysEqual(dataOne, dataOne);
 assertArraysEqual(dataOne, results1);
 assertArraysEqual(dataTwo, results2);
+*/
+
+module.exports = takeUntil;

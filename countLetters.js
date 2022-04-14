@@ -20,5 +20,6 @@ const countLetters = function(words) {
   }
   console.log(result);
 };
-countLetters("lighthouse in the house");
+// countLetters("lighthouse in the house");
 
+module.exports = countLetters;

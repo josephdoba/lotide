@@ -23,6 +23,7 @@ const testObject = {
   "Akelarre":  { stars: 3 }
 };
 
+/*
 //test cases:
 console.log(findKey(testObject, x => x.stars === 2)); // noma
 findKey(testObject, x => x.stars === 2);
@@ -34,3 +35,5 @@ assertEqual(findKey(testObject, x => x.stars === 2), "noma"); // passes
 assertEqual(findKey(testObject, x => x.stars === 3), "noma"); // fails
 assertEqual(findKey(testObject, x => x.stars === 3), "Akaleri"); // passes
 assertEqual(findKey(testObject, x => x.stars === 4), undefined); // passes
+*/
+module.exports = findKey;
