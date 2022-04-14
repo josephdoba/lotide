@@ -5,7 +5,6 @@ const assertEqual = require("./assertEqual.js");
 
 const tail = function(array) {
   let tailArray = array.slice(1,array.length);
-  console.log(tailArray);
   return tailArray;
 };
 
